@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h2, h3 {
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <h1>Introduction To HTML</h1>
+    </header>
+
+    <h2>What is HTML?</h2>
+    <p>HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. HTML describes the structure of the Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+    <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p> 
+    <p>Browsers do not display the HTML tags, but use them to render the content of the page.</p>
+    <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusions in HTML can be realized using HTML tags.</p>
+    
+    <h3>Registration Form</h3>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <h3>User Information Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Merriam Hlao</td>
+                <td>merriam.hlao@example.com</td>
+                <td>(011) 111-7890</td>
+            </tr>
+            <tr>
+                <td>Bulelwa Booi</td>
+                <td>bulelwa.booi@example.com</td>
+                <td>(011) 000-1111</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Image</h3>
+    <img src="premium_vector-1711987674097-605fc44a6baa.png" alt="Web Development">
+
+    <h3>External Link</h3>
+    <a href="https://google.com" target="_blank">Go to Google</a>
+</body>
+</html>
